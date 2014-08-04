@@ -1,0 +1,6 @@
+body { counter-reset:section 0; }
+div.entry h2:before { counter-increment:section; content: counter(section) ". " }
+div.entry h2 { counter-reset:equation }
+div.math:before { counter-increment:equation; content: "(" counter(section) "." counter(equation) ")"; float:right; }
+div.math img { display: block; margin-left:auto; margin-right:auto; }
+span.math img { border:none; vertical-align:middle; }
