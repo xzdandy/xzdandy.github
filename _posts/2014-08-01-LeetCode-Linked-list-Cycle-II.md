@@ -67,6 +67,9 @@ class Solution:
         return fast
 {% endhighlight %}
 
+<hr / >
+
 <h2>Reference:</h2>
 [LeetCode Forum](https://oj.leetcode.com/discuss/396/is-there-any-better-answer-for-the-linked-list-cycle-ii)
+
 [Wikipedia Cycle Detection](http://en.wikipedia.org/wiki/Cycle_detection)
