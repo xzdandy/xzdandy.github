@@ -67,6 +67,8 @@ class Solution:
         return fast
 {% endhighlight %}
 
+
+
 <hr / >
 
 <h2>Reference:</h2>
