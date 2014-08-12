@@ -1,4 +1,4 @@
-/* Pretty printing styles. Used with prettify.js. */
+﻿/* Pretty printing styles. Used with prettify.js. */
 
 /* SPAN elements with the classes below are added by prettyprint. */
 .pln { color: #000 }  /* plain text */
@@ -53,7 +53,7 @@ li.L3,
 li.L5,
 li.L6,
 li.L7,
-li.L8 { list-style-type: none }
+li.L8 { list-style-type: decimal }
 /* Alternate shading for lines */
 li.L1,
 li.L3,
