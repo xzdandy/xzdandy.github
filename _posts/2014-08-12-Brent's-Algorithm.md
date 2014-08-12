@@ -15,7 +15,8 @@ In the [LeetCode Linked list Cycle II](/2014/08/01/LeetCode-Linked-list-Cycle-II
 The basic idea of Brent's Algorithm is quite similar with Floyds'. Now suppose that hare and tortoise are both already in the cycle, then let tortoise stationary. If hare runs a whole lap, apparently hare will overlap tortoise and the number of step that hare runs is length of cycle. Brent's Algorithm makes use of this simple idea. Just read the python code and comments! 
 
 <h3>Code in Python:</h3>
-{% highlight python %}# Definition for singly-linked list.
+<pre class="prettyprint linenums">
+# Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -59,7 +60,7 @@ class Solution:
         
         
         return fast
-{% endhighlight %}
+</pre>
 
 <h3>Advantages:</h3>
 Regarding Wikipedia, Brent's algorithm has two advantages over Tortoise and hare:
