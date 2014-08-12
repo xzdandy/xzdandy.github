@@ -36,7 +36,7 @@
 /* Put a border around prettyprinted code snippets. */
 pre.prettyprint { padding: 2px; border: 1px solid #888 }
 pre.prettyprint {
-    padding: 0px;
+    padding: 1px;
     margin: 0 0px 0px 0px;
     font-family: Consolas, "微软雅黑", Arial, "宋体", sans-serif;
     font-size: 12px;
