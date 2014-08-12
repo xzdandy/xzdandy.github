@@ -61,9 +61,9 @@ class Solution:
         return fast
 {% endhighlight %}
  
-<h3>Advantages:</h3>
+<h2>Advantages:</h2>
 Regarding Wikipedia, Brent's algorithm has two advantages over Tortoise and hare:
-* The algorithm fins out the length of cycle directly which is <i>lam</i> in the code
+* The algorithm fins out the length of cycle directly which is <i>lam</i> in the code.
 * Every stage tortoise doesn't need to move and hare only need to jump one step while in Floyds' we need totally 3 steps.
 Finally Brent claims that his algorithm runs around 36% more quickly than Floyds'.
 
