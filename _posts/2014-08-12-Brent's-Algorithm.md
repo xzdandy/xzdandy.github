@@ -15,5 +15,5 @@ In the [LeetCode Linked list Cycle II](/2014/08/01/LeetCode-Linked-list-Cycle-II
 The basic idea of Brent's Algorithm is quite similar with Floyds'. Now suppose that hare and tortoise are both already in the cycle, then let tortoise stationary. If hare runs a whole lap, apparently hare will overlap tortoise and the number of step that hare runs is length of cycle. Brent's Algorithm makes use of this simple idea. Just read the python code and comments! 
 
 <h2>Reference:</h2>
-* "LeetCode Forum":https://oj.leetcode.com/discuss/396/is-there-any-better-answer-for-the-linked-list-cycle-ii
-* "Wikipedia Cycle Detection":http://en.wikipedia.org/wiki/Cycle_detection
+* [LeetCode Forum](https://oj.leetcode.com/discuss/396/is-there-any-better-answer-for-the-linked-list-cycle-ii)
+* [Wikipedia Cycle Detection](http://en.wikipedia.org/wiki/Cycle_detection)

@@ -72,5 +72,5 @@ class Solution:
 In the next post ["Brent's Algorithm"](/2014/08/12/Brent's-Algorithm.html), we will see another algorithm which is faster than Tortoise and hare.
 
 <h2>Reference:</h2>
-* "LeetCode Forum":https://oj.leetcode.com/discuss/396/is-there-any-better-answer-for-the-linked-list-cycle-ii
-* "Wikipedia Cycle Detection":http://en.wikipedia.org/wiki/Cycle_detection
+* [LeetCode Forum](https://oj.leetcode.com/discuss/396/is-there-any-better-answer-for-the-linked-list-cycle-ii)
+* [Wikipedia Cycle Detection](http://en.wikipedia.org/wiki/Cycle_detection)
