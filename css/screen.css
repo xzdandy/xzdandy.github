@@ -169,11 +169,11 @@ ul.posts {
 	#post pre ul,
 	#post pre ol {
 	margin-left: 3em;
+	margin-right: 0.5em;
 	}
 	#post pre {
-		white-space: pre;
 		white-space: pre-wrap;
-		word-break: break-all;
+		word-break: keep-all;
 		word-wrap: break-word;
 	}
  
