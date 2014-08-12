@@ -161,10 +161,15 @@ ul.posts {
   }
   */
 
-  /*#post ul,
+  #post ul,
   #post ol {
     margin-left: 1.35em;
-  }*/
+  }
+  
+  #post pre ul,
+  #post pre ol {
+	margin-left: 3em;
+  }
 
   #post code {
     border: 1px solid #ddd;
