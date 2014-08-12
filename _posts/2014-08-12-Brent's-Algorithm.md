@@ -26,21 +26,21 @@ class Solution:
     # @param head, a ListNode
     # @return a list node
     def detectCycle(self, head):
-        power = lam = 1
+        power = lam = 1 # lam is length of the cycle, power is the max number of tries
         
-        fast = head
-        slow = head
+        fast = head # fast = hare
+        slow = head # slow = tortoise
         
         if not (head and head.next):
             return None
             
-        fast = fast.next
-        
+        fast = fast.next 
+        # find where hare and tortoise overlap
         while fast != slow:
-            if power == lam:
-                slow = fast
-                power *= 2
-                lam = 0
+            if power == lam: # if hare doesn't overlap tortoise in power steps
+                slow = fast # let tortoise advance which makes sure tortoise will be in the cycle
+                power *= 2 # double the max number of tries
+                lam = 0 # start a new turn
             
             if fast.next:
                 fast = fast.next
@@ -48,13 +48,13 @@ class Solution:
                 return None
                 
             lam += 1
-           
+        # find the beginning of cycle   
         fast = slow = head
         
         for i in range(lam):
             fast = fast.next
-        
-        while fast != slow:
+        # the distance between hare and tortoise is lam
+        while fast != slow: # the same procedure as Floyds' to find the beginning node of the cycle
             fast = fast.next
             slow = slow.next
         
