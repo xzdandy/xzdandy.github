@@ -61,8 +61,6 @@ class Solution:
         return fast
 {% endhighlight %}
 
-<br />
-
 <h3>Advantages:</h3>
 Regarding Wikipedia, Brent's algorithm has three advantages over Tortoise and hare:
 
@@ -70,6 +68,7 @@ Regarding Wikipedia, Brent's algorithm has three advantages over Tortoise and ha
 * Every stage tortoise doesn't need to move and hare only need to jump one step while in Floyds' we need totally 3 steps.
 * Finally Brent claims that his algorithm runs around 36% more quickly than Floyds'.
 
+<br/>
 
 <h2>Reference:</h2>
 * [LeetCode Forum](https://oj.leetcode.com/discuss/396/is-there-any-better-answer-for-the-linked-list-cycle-ii)
