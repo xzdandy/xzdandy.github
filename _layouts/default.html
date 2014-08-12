@@ -13,9 +13,11 @@
    <!-- Homepage Jquery -->	
    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
    
-   <!-- Homepage mathlatex -->	
-   <script type="text/javascript" src="/javascript/mathlatex.js"></script>
-   <link rel="stylesheet" href="/css/mathlatex.css" type="text/css" />
+   <!-- mathlatex -->	
+   <link rel="stylesheet" href="/themes/mathlatex/mathlatex.css" type="text/css" />
+   
+   <!-- google-code-prettify -->
+   <link rel="stylesheet" href="/themes/google-code-prettify/prettify.css" type="text/css" />
    
    <!-- Typekit -->
    <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
@@ -82,5 +84,20 @@ pageTracker._trackPageview();
 </script>
 <!-- Google Analytics end -->
 
+<!-- mathlatex -->	
+<script type="text/javascript" src="/themes/mathlatex/mathlatex.js"></script>
+
+<!-- google-code-prettify -->
+<script type="text/javascript" src="/themes/google-code-prettify/prettify.js"></script>
+<script type="text/javascript">
+$(function() {
+  window.prettyPrint && prettyPrint();
+});
+$(function() {
+  $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
+});
+</script>
+
+   
 </body>
 </html>

@@ -31,7 +31,7 @@ Using this information, we can already prove this algorithm. The total number of
 We all need is <span class="math">(x+m) \mbox{ mod l } \equiv 0</span>. This means if we are on the node <span class="math">m</span> and we run more <span class="math">x</span> steps, we will return to the start point of the cycle which is also what we want in this problem. So we can just simulate the whole process and then get the answer. Following is the python code.
 
 <h3>Code in Python:</h3>
-{% highlight python %}
+<pre class="prettyPrint">
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -66,7 +66,7 @@ class Solution:
             slow = slow.next
         
         return fast
-{% endhighlight %}
+</pre>
 
 <hr / >
 
