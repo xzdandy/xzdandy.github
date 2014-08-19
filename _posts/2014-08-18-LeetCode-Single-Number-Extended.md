@@ -18,7 +18,7 @@ This problem is not so difficult. Firstly, we will give a solution with <span cl
 
 Now let us think about a bit operation **xor** which in most programming language is represented by **^**. Following is the table for **xor** operation.
 
-<table align="right">
+<table border="1px #aaa solid">
 <tr bgcolor="#DDEEFF" align="center">
 <td colspan="2"><b>INPUT</b><br />
 A &#160; B</td>
