@@ -18,7 +18,7 @@ This problem is not so difficult. Firstly, we will give a solution with <span cl
 
 Now let us think about a bit operation **xor** which in most programming language is represented by **^**. Following is the table for **xor** operation.
 
-<table border="1px #aaa solid">
+<table>
 <tr bgcolor="#DDEEFF" align="center">
 <td colspan="2"><b>INPUT</b><br />
 A &#160; B</td>
@@ -46,3 +46,5 @@ A XOR B</td>
 <td>0</td>
 </tr>
 </table>
+
+Now we consider two identical number, for example, **5** and **5**. Apparently the 2 base of them are still the same which is **101**. Using the rule above, we can get <span class="math">5 \^ 5 = (101)_2 \^ (101)_2 = 0</span>.
