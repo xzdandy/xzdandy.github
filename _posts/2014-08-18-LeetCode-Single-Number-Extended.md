@@ -47,4 +47,4 @@ A XOR B</td>
 </tr>
 </table>
 
-Now we consider two identical number, for example, **5** and **5**. Apparently the 2 base of them are still the same which is **101**. Using the rule above, we can get <span class="math">5 xor 5 = (101)_{2} xor (101)_{2} = 0</span>.
+Now we consider two identical number, for example, **5** and **5**. Apparently the 2 base of them are still the same which is **101**. Using the rule above, we can get <span class="math">5 xor 5 = (101)_{2} xor (101)_{2} = 0</span>. We can expand this nice property to more numbers, and we get
