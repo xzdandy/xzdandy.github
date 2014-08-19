@@ -216,6 +216,7 @@ ul.posts {
 /*****************************************************************************/
 table,th,td
 {
-	border:1px solid black;
+	border:1px solid #aaa;
 	border-collapse:collapse;
+	padding: 2px
 }

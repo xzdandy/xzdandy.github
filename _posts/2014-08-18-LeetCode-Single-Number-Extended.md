@@ -47,4 +47,4 @@ A XOR B</td>
 </tr>
 </table>
 
-Now we consider two identical number, for example, **5** and **5**. Apparently the 2 base of them are still the same which is **101**. Using the rule above, we can get <span class="math">5 \^ 5 = (101)_2 \^ (101)_2 = 0</span>.
+Now we consider two identical number, for example, **5** and **5**. Apparently the 2 base of them are still the same which is **101**. Using the rule above, we can get <span class="math">5 \^ 5 = (101)_{2} \^ (101)_{2} = 0</span>.
