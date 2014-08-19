@@ -59,7 +59,7 @@ class Solution:
         for num in A:
             res ^= num
         return res
-<\pre> 
+</pre> 
 
 ## Extension:
 
