@@ -16,7 +16,7 @@ Given an array of integers, every element appears twice except for one. Find tha
 ## Solution:
 This problem is not so difficult. Firstly, we will give a solution with <span class="math">O(n)</span> time complexity and <span class="math">O(1)</span> space complexity. Secondly, we will talk about a more general version of this problem.
 
-Now let us think about a bit operation **xor** which in most programming language is represented by **^**. Following is the table for **xor** operation.
+Now let us think about a bit operation **xor** which in most programming language is represented by **xor**. Following is the table for **xor** operation.
 
 <table>
 <tr bgcolor="#DDEEFF" align="center">
@@ -47,7 +47,7 @@ A XOR B</td>
 </tr>
 </table>
 
-Now we consider two identical number, for example, **5** and **5**. Apparently the 2 base of them are still the same which is **101**. Using the rule above, we can get <span class="math">5 \mbox{ ^ } 5 = (101)\_{2} \mbox{ ^ } (101)\_{2} = 0</span>. We can expand this nice property to more numbers, and we get <span class="math">5 \mbox{ ^ } 5 \mbox{ ^ } 4 \mbox{ ^ } 4 \mbox{ ^ } 3 \mbox{ ^ } 3 \mbox{ ^ } 2 = 2</span>. Notice since all the pair of same numbers will become 0 through **xor** operation, the number left will be what can't be grouped into pairs, in other words it appears odd times. Using this idea, we can solve this problem in a direct way.
+Now we consider two identical number, for example, **5** and **5**. Apparently the 2 base of them are still the same which is **101**. Using the rule above, we can get <span class="math">5 \mbox{ xor } 5 = (101)\_{2} \mbox{ xor } (101)\_{2} = 0</span>. We can expand this nice property to more numbers, and we get <span class="math">5 \mbox{ xor } 5 \mbox{ xor } 4 \mbox{ xor } 4 \mbox{ xor } 3 \mbox{ xor } 3 \mbox{ xor } 2 = 2</span>. Notice since all the pair of same numbers will become 0 through **xor** operation, the number left will be what can't be grouped into pairs, in other words it appears odd times. Using this idea, we can solve this problem in a direct way.
 
 ## Code In Python:
 <pre class="prettyprint linenums">
@@ -62,6 +62,7 @@ class Solution:
 </pre> 
 
 ## Extension:
+Given an array of integers, every element appears *k* times except for one. Find that single one who appears *l* times.
 
 
 ## Reference:
