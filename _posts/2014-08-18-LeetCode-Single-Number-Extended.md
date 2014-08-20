@@ -64,6 +64,26 @@ class Solution:
 ## Extension:
 Given an array of integers, every element appears *k* times except for one. Find that single one who appears *l* times.
 
+The idea is from [@ranmocy](https://oj.leetcode.com/discuss/857/constant-space-solution). We will still make use of bit operation, but this time it's more complex. We need a array **x[i]** with size *k* to save the bits appear **i** times. In detail **x[1]** means the bits that appear once, while **x[k-1]** means the bits that appears **k-1** times. **x[0]** is special, for it means both **0** times and **k** times. Next, for every input number **a**, we update the array by **x[i] = (x[i-1] & a) | (x[i] & ~a)**. Except **x[0] = (x[k] & a) | (x[0] & ~a)**.
+
+The idea is not so explicit to understand, you may try some real numbers just like xor above to help figuring out. Following, I will give my code in Python.
+
+## Code In Python:
+<pre class="prettyprint linenums">
+class Solution:
+    def singleNumber(self, A, k, l):
+        x = [0] * k
+		x[0] = ~0 # Notice we need initiate x[0] to all "111...111" which is "-1" in decimal. 
+		
+		for num in A:
+			temp = x[k-1]
+			for i in range(k-1,0,-1):
+				x[i] = (x[i-1] & a) | (x[i] & ~a) # update the array 
+			x[0] = (temp & a) | (x[0] & ~a)
+		
+		return x[l]
+</pre> 
+
 
 ## Reference:
 * [LeetCode Forum](https://oj.leetcode.com/discuss/oj/single-number)
