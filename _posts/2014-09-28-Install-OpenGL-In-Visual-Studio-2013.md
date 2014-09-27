@@ -14,6 +14,8 @@ title: Install OpenGL In Visual Studio 2013
 
 We use **glut-3.7.6-bin.zip** to configure the environment.
 
+<br />
+
 ##Configure:
 * Copy your glut.h to <drive\>\:\<VC++ path>\include\GL\glut.h
 * Copy your　glut32.lib to <drive\>\:\<VC++path>\lib\glut32.lib
@@ -24,7 +26,7 @@ We use **glut-3.7.6-bin.zip** to configure the environment.
 
 ## Test Code:
 <pre class="prettyprint linenums">
-#include <Gl\glut.h\>
+#include \<Gl\\glut.h\>
 
 void myDisplay(void)
 {
