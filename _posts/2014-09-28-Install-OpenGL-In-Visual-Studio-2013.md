@@ -15,16 +15,16 @@ title: Install OpenGL In Visual Studio 2013
 We use **glut-3.7.6-bin.zip** to configure the environment.
 
 ##Configure:
-* Copy your glut.h to \<drive\>\:\<VC++ path>\include\GL\glut.h
-* Copy your　glut32.lib to \<drive\>\:\<VC++path>\lib\glut32.lib
+* Copy your glut.h to <drive\>\:\<VC++ path>\include\GL\glut.h
+* Copy your　glut32.lib to <drive\>\:\<VC++path>\lib\glut32.lib
 * Copy glut32.dll into your windows directory. For example glut32.dll ---> C:\Windows\SysWOW64
 * Create a project in VS 2013, and choose project->project property-> ConfigurationProperties->Linker->Input->Additional Dependencies,then add **opengl32.lib glu32.lib glut32.lib**
 
-<hr />
+<br />
 
 ## Test Code:
 <pre class="prettyprint linenums">
-#include <Gl\\glut.h>
+#include <Gl\glut.h\>
 
 void myDisplay(void)
 {
@@ -58,6 +58,8 @@ int main(int argc, char * argv[])
     return 0;
 }
 </pre>
+
+<br />
 
 ##Reference:
 * [Windows 8.1 Visual Studio 2013配置OpenGL开发环境](http://blog.csdn.net/lvhao578041381/article/details/18971691)
