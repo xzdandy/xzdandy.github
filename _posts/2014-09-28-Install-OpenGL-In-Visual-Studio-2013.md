@@ -24,7 +24,7 @@ We use **glut-3.7.6-bin.zip** to configure the environment.
 
 ## Test Code:
 <pre class="prettyprint linenums">
-#include Gl\glut.h
+#include "Gl\glut.h"
 
 void myDisplay(void)
 {
