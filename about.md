@@ -5,7 +5,7 @@ permalink: /about/
 tags: about
 ---
 
-I am a gatech Computer Science Phd Student, and have a broad insterest in Mathematics, Systems and Biology. My email address: zhuangdi.xu@cc.gatech.edu.
+I am a gatech Computer Science Phd Student, and have a broad insterest in Mathematics, Computing Systems and Biology. My email address: zhuangdi.xu@cc.gatech.edu.
 
 This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
 ([@4lpine](https://twitter.com/4lpine)).
