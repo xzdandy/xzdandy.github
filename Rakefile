@@ -1,5 +1,35 @@
 drafts_dir = '_drafts'
 posts_dir  = '_posts'
+daily_dir = 'daily/_posts'
+
+# rake daily['my new post']
+desc 'create a new daily post with "rake daily[\'post title\']"'
+task :daily, :title do |t, args|
+  if args.title
+    title = args.title
+  else
+    puts "Please try again. Remember to include the filename."
+  end
+  mkdir_p "#{daily_dir}"
+  filename = "#{daily_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.downcase.gsub(/[^\w]+/, '-')}.md"
+  puts "Creating new post: #{filename}"
+  File.open(filename, "w") do |f|
+    f << <<-EOS.gsub(/^    /, '')
+    ---
+    layout: post
+    title: #{title}
+    date: #{Time.new.strftime('%Y-%m-%d %H:%M')}
+    categories: daily
+    ---
+
+    EOS
+  end
+
+# Uncomment the line below if you want the post to automatically open in your default text editor
+  system ("vim #{filename}")
+end
+
+
 
 # rake post['my new post']
 desc 'create a new post with "rake post[\'post title\']"'
